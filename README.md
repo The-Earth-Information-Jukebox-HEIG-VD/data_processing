@@ -6,6 +6,7 @@ Data processing for **The Earth Information Jukebox** (NASA Space Apps Challenge
 | Folder | What it is |
 |---|---|
 | [`precipitation/2024/`](precipitation/2024/) | NASA GPM IMERG daily precipitation 2024, whole globe, every pixel. See [`precipitation/2024/README.md`](precipitation/2024/README.md). |
+| [`precipitation/monthly_2000_2026/`](precipitation/monthly_2000_2026/) | NASA GPM IMERG monthly precipitation June 2000 – Nov 2026, whole globe, every pixel, one file per year. See [`README`](precipitation/monthly_2000_2026/README.md). |
 | [`common_grid/`](common_grid/) | one shared map grid for all datasets: put any NASA map (flat, Mercator, polar, Robinson…) on the same 0.25° grid and get comparable numbers for the music. See [`common_grid/README.md`](common_grid/README.md). |
 
 ## Quick start
