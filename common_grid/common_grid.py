@@ -87,10 +87,17 @@ REGIONS = {
 }
 
 
+_MASKS = {}
+
+
 def region_mask(region):
-    """Boolean 720 x 1440 mask for a region name or a (lon0, lon1, lat0, lat1) box."""
-    lon0, lon1, lat0, lat1 = REGIONS[region] if isinstance(region, str) else region
-    return (LON2D >= lon0) & (LON2D < lon1) & (LAT2D >= lat0) & (LAT2D < lat1)
+    """Boolean 720 x 1440 mask for a region name or a (lon0, lon1, lat0, lat1) box.
+    Cached, so looping over thousands of days stays fast."""
+    box = tuple(REGIONS[region]) if isinstance(region, str) else tuple(region)
+    if box not in _MASKS:
+        lon0, lon1, lat0, lat1 = box
+        _MASKS[box] = (LON2D >= lon0) & (LON2D < lon1) & (LAT2D >= lat0) & (LAT2D < lat1)
+    return _MASKS[box]
 
 
 # ----------------------------------------------------------------------------

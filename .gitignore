@@ -5,6 +5,8 @@ data/
 *.wav
 *.mp3
 *.npz
+# keep the precipitation results
+!precipitation/*/*.npz
 *.exr
 __pycache__/
 .ipynb_checkpoints/
