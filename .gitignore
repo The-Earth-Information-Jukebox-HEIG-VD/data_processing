@@ -1,0 +1,11 @@
+# big or re-downloadable files
+maps/
+data/
+*.mp4
+*.wav
+*.mp3
+*.npz
+*.exr
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
