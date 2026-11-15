@@ -42,3 +42,5 @@ The video (path or URL readable by OpenCV) is the positional argument; download 
 | `--start_year` | `2012` | year of the first frame |
 
 Output: `nightlights_<YYYY>.npy` (float32, 0.0-1.0), one per frame; the script stops after 2023.
+
+> AI assistance: Google Gemini and Anthropic Claude helped with research, data analysis, coding and debugging, and writing for the night lights extractor. See [AI assistance](../README.md#ai-assistance).

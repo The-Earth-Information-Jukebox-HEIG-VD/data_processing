@@ -22,3 +22,14 @@ This covers `common_grid/`. The other folders have their own `requirements.txt` 
 import sys; sys.path.insert(0, "common_grid")
 from common_grid import *
 ```
+
+## AI assistance
+
+This data processing work was developed with the help of AI assistants, Google Gemini and Anthropic Claude. In this repository they were used for:
+
+- **Research and information gathering:** NASA data formats and access (GISTEMP NetCDF, GPM IMERG through NASA GIBS, SVS 5276 Earth at Night) and map projections.
+- **Data analysis and interpretation:** regridding every source onto the common 0.25° grid and checking the extracted values against the originals.
+- **Coding, debugging and troubleshooting:** the extraction scripts and the `common_grid` helpers.
+- **Writing, editing and translating:** the READMEs in this repository.
+
+The team checked what the AI suggested and is responsible for the content of this repository. The data values come from NASA sources; the AI helped write and check the processing but did not generate any values.

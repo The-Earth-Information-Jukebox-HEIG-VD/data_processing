@@ -35,3 +35,5 @@ The script takes no arguments. It downloads `gistemp1200_GHCNv4_ERSSTv5.nc.gz` a
 ## Relation to the published data
 
 The script outputs the native 2 degree grid, **90 x 180, row 0 = South**. The published files in `datasets/data/temperature_anomaly_1880_2025` are **720 x 1440 (0.25 degree), row 0 = North**, float16. The regridding step (copying each 2 degree value onto 8 x 8 pixels and flipping the rows) is **not in this repository**.
+
+> AI assistance: Google Gemini and Anthropic Claude helped with research, data analysis, coding and debugging, and writing for the GISTEMP extractor. See [AI assistance](../README.md#ai-assistance).

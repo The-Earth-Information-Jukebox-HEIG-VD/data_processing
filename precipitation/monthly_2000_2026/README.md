@@ -51,3 +51,5 @@ lausanne = np.concatenate([np.load(f)["precip_mmh"][:, 174, 746]
 * **Pixels are not all the same size.** Near the poles they are small. For an average over a region,
   weight by `cell_area_km2`: `(values * area).sum() / area.sum()`.
 * Check: the global average is about 2.6 mm per day in every year.
+
+> AI assistance: Google Gemini and Anthropic Claude helped with research, data analysis, coding and debugging, and writing for the monthly precipitation extraction. See [AI assistance](../../README.md#ai-assistance).

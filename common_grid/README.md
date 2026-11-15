@@ -79,3 +79,5 @@ Our results (15 July 2024):
 
 Note: VIIRS "fires" are all hot spots, including agricultural and savanna burning.
 That's why Africa is full of dots in July (southern dry season).
+
+> AI assistance: Google Gemini and Anthropic Claude helped with research, data analysis, coding and debugging, and writing for the shared grid and its conversion functions. See [AI assistance](../README.md#ai-assistance).

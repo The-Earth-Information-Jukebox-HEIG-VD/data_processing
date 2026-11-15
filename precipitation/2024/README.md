@@ -53,3 +53,5 @@ Tip: write `precip = p["precip_mmh"]` once. Every `p["precip_mmh"]` unpacks the 
 * **Pixels are not all the same size.** Near the poles they are small. For an average over a region,
   weight by `cell_area_km2`: `(values * area).sum() / area.sum()`.
 * **No missing days** in 2024.
+
+> AI assistance: Google Gemini and Anthropic Claude helped with research, data analysis, coding and debugging, and writing for the 2024 daily precipitation extraction. See [AI assistance](../../README.md#ai-assistance).
